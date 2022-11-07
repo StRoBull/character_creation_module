@@ -14,8 +14,12 @@ def attack(char_name: str, char_class: str) -> str:
                 f' {5 + randint(-3, -1)}')
 
 
+<<<<<<< HEAD
 def defence(char_name: str, char_class: str) -> str:
     """Вызывает функцию защиты."""
+=======
+def defence(char_name, char_class):
+>>>>>>> 95c365a727953de9d404f714c1e2a15606285326
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -24,8 +28,12 @@ def defence(char_name: str, char_class: str) -> str:
         return (f'{char_name} блокировал {10 + randint(2, 5)} урона')
 
 
+<<<<<<< HEAD
 def special(char_name: str, char_class: str) -> str:
     """Открывает специальные возможности игрока."""
+=======
+def special(char_name, char_class):
+>>>>>>> 95c365a727953de9d404f714c1e2a15606285326
     if char_class == 'warrior':
         return (f'{char_name} применил умение «Выносливость {80 + 25}»')
     if char_class == 'mage':
@@ -34,8 +42,12 @@ def special(char_name: str, char_class: str) -> str:
         return (f'{char_name} применил специальное умение «Защита {10 + 30}»')
 
 
+<<<<<<< HEAD
 def start_training(char_name: str, char_class: str) -> str:
     """Открывает режим тренировки."""
+=======
+def start_training(char_name, char_class):
+>>>>>>> 95c365a727953de9d404f714c1e2a15606285326
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -59,10 +71,16 @@ def start_training(char_name: str, char_class: str) -> str:
     return 'Тренировка окончена.'
 
 
+<<<<<<< HEAD
 def choice_char_class() -> str:
     """Режим выбора персонажа."""
     approve_choice: str = None
     char_class: str = None
+=======
+def choice_char_class():
+    approve_choice = None
+    char_class = None
+>>>>>>> 95c365a727953de9d404f714c1e2a15606285326
     while approve_choice != 'y':
         char_class = input('Введи название персонажа, '
                            'за которого хочешь играть: Воитель - warrior, '
@@ -76,8 +94,13 @@ def choice_char_class() -> str:
         if char_class == 'healer':
             print('Лекарь — могущественный заклинатель. '
                   'Черпает силы из природы и веры. ')
+<<<<<<< HEAD
         approve_choice = input('Нажми (Y), чтобы подтвердить выбор,'
                                'или любую другую кнопку, '
+=======
+        approve_choice = input('Нажми (Y), чтобы подтвердить выбор, '
+                               'или любую другую кнопку,'
+>>>>>>> 95c365a727953de9d404f714c1e2a15606285326
                                'чтобы выбрать другого персонажа').lower()
 
     return char_class
